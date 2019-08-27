@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql , useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import headerStyles from "./header.module.scss"
 
@@ -9,7 +9,7 @@ const Header = () => {
       site {
         siteMetadata {
           title
-          author
+          
         }
       }
     }
@@ -22,7 +22,7 @@ const Header = () => {
           activeClassName={headerStyles.activeNavItem}
           to="/"
         >
-          Moonshine Blog
+          {data.site.siteMetadata.title}
         </Link>
       </h1>
       <nav>
