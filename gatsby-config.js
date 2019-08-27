@@ -5,5 +5,11 @@
  */
 
 module.exports = {
+  plugins: [
+  
+  `gatsby-plugin-sass`,
+  `gatsby-plugin-playground`,
+
+],
   /* Your site config here */
 }
