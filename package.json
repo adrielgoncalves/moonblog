@@ -17,6 +17,7 @@
     "gatsby": "^2.13.73",
     "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-sass": "^2.1.12",
+    "gatsby-source-filesystem": "^2.1.18",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
