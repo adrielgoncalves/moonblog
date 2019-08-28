@@ -1,9 +1,16 @@
+// Initialize dotenv
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`, // or '.env'
+})
+
 module.exports = {
   siteMetadata: {
     title: "Moonshine Blog",
     author: "Adriel Gonçalves",
   },
+
   plugins: [
+   
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -35,8 +42,7 @@ module.exports = {
                   resolve: `gatsby-remark-images`,
                   options: {
                     maxWidth: 750,
-                    linkImagesToOriginal: false
-
+                    linkImagesToOriginal: false,
                   },
                 },
               ],
