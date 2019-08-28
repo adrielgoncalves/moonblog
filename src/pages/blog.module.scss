@@ -1,0 +1,36 @@
+.posts {
+    list-style-type: none;
+    margin:0;
+}
+
+.post {
+    
+    margin: 1rem 0;
+
+    a{
+        /* aqui vamos criar um display fixo com uma cor de fundo aplicada na pagina principal fazendo
+    uma especie de caixa ao redor do texto*/
+        background: yellow;
+        color: #000000;
+        display: block;
+        padding:  1rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        /* a:hover vai criar um sombriamento ao passar o mouse*/
+        background: #e4e4e4e4;
+    }
+
+    h2 {
+        margin-bottom: 0;
+
+    }
+
+    p {
+        /**/
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
