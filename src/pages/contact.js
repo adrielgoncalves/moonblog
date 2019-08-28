@@ -9,7 +9,7 @@ const ContactPage = () => {
       <p>
         {" "}
         Siga Minhas Redes Sociais <br />
-        <a href="https://www.instagram.com/ingridluane/" target="blank">
+        <a href="https://www.instagram.com/moonshinebel/" target="blank">
           Instagram
         </a>
         <br />
