@@ -1,16 +1,16 @@
-// Initialize dotenv
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`, // or '.env'
-})
+const  dotenv = require ('dotenv')
 
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config()
+  // console.log(process.env.CONTENTFUL_ACCESS_TOKEN)
+}
 module.exports = {
   siteMetadata: {
     title: "Moonshine Blog",
     author: "Adriel Gonçalves",
   },
 
-  plugins: [
-   
+  plugins: [ 
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -58,6 +58,14 @@ module.exports = {
         name: `src`,
         path: `${__dirname}/src/`,
       },
+    },
+
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: `pq4j7it9shqo`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
     },
 
     `gatsby-plugin-sass`,
