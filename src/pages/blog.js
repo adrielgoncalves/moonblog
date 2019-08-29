@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import blogStyle from "./blog.module.scss"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -13,9 +13,7 @@ const BlogPage = () => {
             title
             slug
             publishedDate(formatString: "MMM Do, YYY")
-            body {
-              json
-            }
+            
           }
         }
       }
